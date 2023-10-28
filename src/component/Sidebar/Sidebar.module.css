@@ -1,0 +1,21 @@
+.Sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.imgLogo {
+  width: 70px;
+}
+.anticon,
+.anticon-desktop,
+.ant-menu-item-icon {
+  font-size: 3rem !important;
+}
+
+@media screen and (max-width: 991.9px) {
+  .imgLogo {
+    width: 40px;
+  }
+}
