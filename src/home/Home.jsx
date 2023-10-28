@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import About from '../component/about/About'
-import NewsSingle from '../component/anction/SingleAnction'
 import Footer from '../component/footer/Footer'
 import Saidbar from '../component/Sidebar/Sidebar'
 

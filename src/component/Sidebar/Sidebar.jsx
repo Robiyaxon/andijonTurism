@@ -9,7 +9,7 @@ import {
   GiftOutlined,
 } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
-import { Layout, Menu, theme } from "antd";
+import { Layout, Menu } from "antd";
 
 import img from "../../acsserts/sidebar.webp";
 import logo from "../../acsserts/andijan.png";
@@ -89,10 +89,6 @@ const rootSubmenuKeys = ["sub1", "sub2", "sub4", "sub5", "sub6", "sub7"];
 const Saidbar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [openKeys, setOpenKeys] = useState(["sub1"]);
-
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
 
   const onOpenChange = (keys) => {
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);

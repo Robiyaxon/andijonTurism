@@ -12,7 +12,7 @@ import { MyMap } from "../map/Map";
 import styles from "./About.module.css";
 
 const About = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const data = [
     {
