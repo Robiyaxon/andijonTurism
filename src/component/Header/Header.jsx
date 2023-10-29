@@ -3,6 +3,8 @@ import video from "../../acsserts/andijon2.mp4";
 import styles from "./Home.module.css";
 import { useTranslation } from "react-i18next";
 
+
+
 const Header = () => {
   const { t } = useTranslation();
   return (
