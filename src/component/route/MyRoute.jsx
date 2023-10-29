@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import karoake from "../../acsserts/karoake.jpg";
 import zoopark from "../../acsserts/zoopark.jpg";
 import park from "../../acsserts/navoiy.jpg";
 import park2 from "../../acsserts/park.jpg";
