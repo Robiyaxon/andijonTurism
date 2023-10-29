@@ -5,18 +5,21 @@ import img from "../../acsserts/jome.jpg";
 
 import "./Anction.css";
 
-const Anctions = ({title,    map = [
-  {
-    id:1,
-    img: img,
-    title: "Jome me’moriy majmuasi",
-    text2: " Jome joyi",
-    text3: "lorem imsone 4556",
-  }
-]}) => {
-
+const Anctions = ({
+  title,
+  path,
+  map = [
+    {
+      id: 1,
+      img: img,
+      title: "Jome me’moriy majmuasi",
+      text2: " Jome joyi",
+      text3: "lorem imsone 4556",
+    },
+  ],
+}) => {
   const map2 = map.map((a) => (
-    <NavLink key={a.id} to="singleaction">
+    <NavLink key={a.id} to={path}>
       <div className="box">
         <img className="main-img" src={a.img} alt="" />
         <div className="box-content">

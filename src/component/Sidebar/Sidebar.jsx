@@ -69,12 +69,13 @@ const items = [
     getItem(<NavLink to="/home/notpage">Book kafe</NavLink>, "20"),
   ]),
   getItem("Transport", "sub6", <CarOutlined />, [
-    getItem(<NavLink to="/home/notpage">Aeraport</NavLink>, "21"),
-    getItem(<NavLink to="/home/notpage">Poyezd vakzal</NavLink>, "22"),
-    getItem(<NavLink to="/home/notpage">Avto vakzal</NavLink>, "23"),
-    getItem(<NavLink to="/home/notpage">Taxi</NavLink>, "24"),
+    // <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    getItem(<NavLink target="_blank"  rel="noopener noreferrer" to="https://www.flightradar24.com/data/airports/azn">Aeraport</NavLink>, "21"),
+    getItem(<NavLink target="_blank"  rel="noopener noreferrer" to="https://rasp.yandex.uz/station/9620584/">Poyezd vakzal</NavLink>, "22"),
+    getItem(<NavLink target="_blank"  rel="noopener noreferrer" to="https://www.goldenpages.uz/uz/company/?Id=11602">Avto vakzal</NavLink>, "23"),
+    getItem(<NavLink target="_blank"  rel="noopener noreferrer" to="https://www.google.com/localservices/prolist?g2lbs=ANTchaP16cWzOxMleEto5N2bhLje_8iwKXZnY2eQJMzJSrvpi9LFQpU6Mda8ipEBdhTWzoQ_WQ0JVlfrWrcP4pWOToLMZNFZHQPoYS9ps_6JTc9YQ4xp9Q4%3D&hl=en-UZ&gl=uz&ssta=1&q=andijon%20taxi&oq=andijon%20taxi&slp=MgA6HENoTUkwUFBnODZpYWdnTVYycEdEQngzRmt3Vm1SAggCYACSAc8BCg0vZy8xMWoyNG01cmY0Cg0vZy8xMWZrczJiN3o1Cg0vZy8xMWNyeHl2bjExCg0vZy8xMXNkZHZyZzQwCg0vZy8xMWRmMDRwcnY0Cg0vZy8xMW1faF82MjI0Cg0vZy8xMXkxaHYxNV9tCg0vZy8xMXAwemJnZ2p2Cg0vZy8xMXYzanRxNncxCg0vZy8xMXY0cmZkaDloCg0vZy8xMWwybG1rdjM4Cg0vZy8xMXNiOG5zM3QyCg0vZy8xMWptdF9zY2sxEgQSAggBEgQKAggBmgEGCgIXGRAA&src=2&serdesk=1&sa=X&ved=2ahUKEwiB4drzqJqCAxXDR_EDHZdQAdsQjGp6BAgUEAE&scp=ChFnY2lkOnRheGlfc2VydmljZRJJEhIJ79QTax2QvDgRrN9zeaq8RfwaEgk39neaH-y8OBEPuzPwls19diIHQW5kaWphbioUDe99PxgV7YcLKx3oYV0YJV-sKiswABoEdGF4aSIMYW5kaWpvbiB0YXhpKgxUYXhpIHNlcnZpY2U%3D">Taxi</NavLink>, "24"),
     getItem(
-      <NavLink to="/notpage">Yoqilg`i quyish shahobchalari</NavLink>,
+      <NavLink target="_blank"  rel="noopener noreferrer" to="https://uz.yellowpages.uz/rubrika/yoqilgi-quyish-shoxobchalari/andijon">Yoqilg`i quyish shahobchalari</NavLink>,
       "25"
     ),
   ]),
