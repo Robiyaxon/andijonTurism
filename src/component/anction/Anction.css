@@ -177,6 +177,15 @@
         flex-wrap: wrap;
     }
 
+    .PrejectName {
+        margin-top: 1rem;
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .PrejectName h1 {
+        text-align: center;
+    }
+
     .box {
         margin: 1rem;
     }
