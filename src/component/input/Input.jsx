@@ -1,8 +1,16 @@
 import React from 'react'
 import style from "./Input.module.css"
+import Saidbar from '../Sidebar/Sidebar'
 const Input = () => {
   return (
-    <div className={style.Input}><h1>Hozircha bu page mavjud emas</h1></div>
+    <>
+            <Saidbar />
+
+     <div className={style.Input}>
+      
+      <h1>Hozircha bu page mavjud emas</h1></div>
+    </>
+   
   )
 }
 

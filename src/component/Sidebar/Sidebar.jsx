@@ -30,15 +30,15 @@ function getItem(label, key, icon, children) {
 }
 const items = [
   getItem("Tarixiy obidalar", "sub1", <BankOutlined />, [
-    getItem(<NavLink to="/home/action">Qadimiy Obidalar</NavLink>, "3"),
+    getItem(<NavLink to="https://www.google.com/search?q=qadimiy+obidalar+andijon+&sca_esv=577545666&biw=1348&bih=629&tbm=lcl&sxsrf=AM9HkKkcTtukDabjMdiczEs4Tf5CMuhXvQ%3A1698557118364&ei=vuw9ZeXkFZaQxc8PnriNwAg&ved=0ahUKEwjlu66twpqCAxUWSPEDHR5cA4gQ4dUDCAk&uact=5&oq=qadimiy+obidalar+andijon+&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhlxYWRpbWl5IG9iaWRhbGFyIGFuZGlqb24gMgUQIRigATIFECEYoAEyBRAhGKABSIxVUMgJWJtPcAd4AJABApgBrwigAYBBqgERMC4xNS4xMC4xLjIuMi4wLjG4AQPIAQD4AQHCAgQQIxgnwgIGEAAYFhgewgIIEAAYigUYkQLCAgUQABiABMICBxAAGIAEGArCAggQABjLARiABMICChAAGMsBGIAEGArCAggQABgWGB4YCogGAQ&sclient=gws-wiz-local#rlfi=hd:;si:;mv:[[40.819013600000005,72.4814203],[40.75074,72.27256109999999]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2">Qadimiy Obidalar</NavLink>, "3"),
     getItem(<NavLink to="/home/action">Qadimiy qadamjolar</NavLink>, "4"),
   ]),
   getItem("Dam olish maskanlari", "sub2", <AreaChartOutlined />, [
     getItem(<NavLink to="/home/park">Istirohat bog`i</NavLink>, "3"),
     getItem(<NavLink to="/home/zoo">Hayvonot bog`i</NavLink>, "4"),
-    getItem(<NavLink to="/home/karaoke">Karaoki bar</NavLink>, "5"),
-    getItem(<NavLink to="/home/disco">Diskateka</NavLink>, "6"),
-    getItem(<NavLink to="/home/theatre">Teatr</NavLink>, "7"),
+    getItem(<NavLink to="https://www.google.com/search?sca_esv=577545666&hl=en&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=AM9HkKlXAweQg9B077YvwKnIOys3sak5ZA:1698556594953&q=karaoke+bar+andijon+haqida&rflfq=1&num=10&sa=X&ved=2ahUKEwjkieSzwJqCAxXZQ_EDHSfrBIAQjGp6BAg8EAE&biw=1348&bih=629&dpr=1.42#rlfi=hd:;si:;mv:[[40.7605308,72.36356719999999],[40.7510234,72.3531088]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">Karaoki bar</NavLink>, "5"),
+    getItem(<NavLink to="https://www.google.com/search?q=diskateka+andijon&sca_esv=577545666&hl=en&biw=1348&bih=629&tbm=lcl&sxsrf=AM9HkKl3SAM4SZQG9ucwfw9_84j60HQ5fA%3A1698556896018&ei=4Os9ZbJh_o3Fzw_FjrDADQ&ved=0ahUKEwiy0avDwZqCAxX-RvEDHUUHDNgQ4dUDCAk&uact=5&oq=diskateka+andijon&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhFkaXNrYXRla2EgYW5kaWpvbjIIEAAYCBgeGA1I0SZQkw9YvyRwAHgAkAEAmAHjBqABiyuqAQ4wLjExLjIuMS4wLjEuM7gBA8gBAPgBAcICBBAjGCfCAggQABiKBRiRAsICBRAAGIAEwgIHEAAYigUYQ8ICChAAGIAEGBQYhwLCAgcQABiABBgKwgIIEAAYywEYgATCAgoQABjLARiABBgKwgIHECMYsQIYJ8ICBxAAGA0YgATCAgkQABgNGIAEGArCAgYQABgeGA3CAggQABgeGA0YD8ICBhAAGBYYHsICCBAAGBYYHhgKiAYB&sclient=gws-wiz-local#rlfi=hd:;si:;mv:[[40.8195664,72.36286799999999],[40.7476817,72.2792716]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1">Diskateka</NavLink>, "6"),
+    getItem(<NavLink to="https://www.google.com/search?sca_esv=577545666&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=AM9HkKmm79vfjRstgp6QeWk28BPNnz0ObQ:1698557012428&q=Teatr+andijon&rflfq=1&num=10&sa=X&ved=2ahUKEwjg0ez6wZqCAxVjR_EDHV0eDp8QjGp6BAgPEAE&biw=1348&bih=629&dpr=1.42#rlfi=hd:;si:;mv:[[40.785147099999996,72.3580844],[40.741694599999995,72.3458971]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:1">Teatr</NavLink>, "7"),
   ]),
   getItem(
     <NavLink to="/home/notpage">Mehmonxonalar</NavLink>,
