@@ -19,7 +19,7 @@ const TopHeader = () => {
           <select name="lang" value={lang} onChange={handleChange}>
             <option value="uz">Uzb</option>
             <option value="en">Eng</option>
-            <option value="krill">Krill</option>
+            <option value="ru">Ru</option>
           </select>
         </div>
       </div>
