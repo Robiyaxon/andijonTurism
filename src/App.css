@@ -1,0 +1,122 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.ant-layout-sider,
+.ant-layout-sider-dark {
+  /* z-index: none !important; */
+  width: 380px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #007dc5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007dc5;
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-layout .ant-layout-sider-trigger {
+  display: none !important;
+}
+
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger.sidebarR {
+  width: 200px !important;
+}
+
+.ant-layout-sider,
+.ant-layout-sider-dark,
+.ant-layout-sider-has-trigger {
+  width: 400px !important;
+  min-width: 300px !important;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item,
+.ant-menu-dark.ant-menu-inline .ant-menu-submenu-title {
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  /* border-left: 7px solid transparent; */
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 20px 20px;
+  height: 50px !important;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent !important;
+  font-weight: 600;
+  border-left-color: #007dc5;
+}
+
+.anticon,
+.anticon-desktop,
+.ant-menu-item-icon {
+  font-size: 1.1rem !important;
+}
+
+.ant-layout-content,
+.css-dev-only-do-not-override-xu9wm8 {
+  margin: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-image .ant-image-img {
+  height: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"] [class^="ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"] [class^="ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"] [class*=" ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"] [class*=" ant-input"] {
+  height: 50px !important;
+}
+
+.ant-layout-sider-children {
+  overflow: auto;
+}
+
+@media screen and (max-width: 991.9px) {
+
+  .ant-layout-sider,
+  .ant-layout-sider-dark,
+  .ant-layout-sider-has-trigger {
+    width: 400px !important;
+    min-width: auto !important;
+  }
+
+  .ant-layout .ant-layout-sider-zero-width-trigger {
+    top: 10px;
+    background-color: #07193a;
+  }
+
+  .ant-layout .ant-layout-sider-zero-width-trigger:hover::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  span.ant-layout-sider-zero-width-trigger.ant-layout-sider-zero-width-trigger-left {
+    display: none;
+  }
+}
+
+body {
+  overflow-x: hidden !important;
+
+}

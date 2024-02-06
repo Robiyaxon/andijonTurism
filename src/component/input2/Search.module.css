@@ -1,0 +1,14 @@
+.Search{
+    background-image: url("../../acsserts/sidebar.webp");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* width: 200px !important; */
+}
+.Search_input{
+    width: 400px !important;
+    height: 40px !important;
+}

@@ -1,0 +1,29 @@
+.Footer {
+  background: #07193a;
+  padding: 5px 0 5px;
+  margin-left: 300px;
+}
+.Footer p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.Footer a {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 991.9px) {
+  .Footer{
+    margin: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 750.9) {
+  .Footer {
+    padding: 10px;
+  }
+  .Footer p {
+    font-size: 15px;
+  }
+}
