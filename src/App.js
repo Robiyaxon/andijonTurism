@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Search2 from "./component/input2/Search";
 import { Home } from "./home/Home";
+
 function App() {
   return (
     <div>

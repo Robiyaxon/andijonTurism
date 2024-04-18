@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import About from '../component/about/About'
 import Footer from '../component/footer/Footer'
 import Saidbar from '../component/Sidebar/Sidebar'
+
 export const Home = () => {
   return (
     <div>

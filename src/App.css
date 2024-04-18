@@ -31,10 +31,10 @@
   background-color: transparent !important;
 }
 
-:where(.css-dev-only-do-not-override-xu9wm8).ant-layout .ant-layout-sider-trigger {
+:where(.css-dev-only-do-not-override-xu9wm8).ant-layout
+  .ant-layout-sider-trigger {
   display: none !important;
 }
-
 .ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger.sidebarR {
   width: 200px !important;
 }
@@ -64,26 +64,26 @@
   font-weight: 600;
   border-left-color: #007dc5;
 }
-
 .anticon,
 .anticon-desktop,
 .ant-menu-item-icon {
   font-size: 1.1rem !important;
 }
-
 .ant-layout-content,
 .css-dev-only-do-not-override-xu9wm8 {
   margin: 0 !important;
 }
-
 :where(.css-dev-only-do-not-override-xu9wm8).ant-image .ant-image-img {
   height: 100% !important;
 }
-
-:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"] [class^="ant-input"],
-:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"] [class^="ant-input"],
-:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"] [class*=" ant-input"],
-:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"] [class*=" ant-input"] {
+:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"]
+  [class^="ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"]
+  [class^="ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"]
+  [class*=" ant-input"],
+:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"]
+  [class*=" ant-input"] {
   height: 50px !important;
 }
 
@@ -92,19 +92,16 @@
 }
 
 @media screen and (max-width: 991.9px) {
-
   .ant-layout-sider,
   .ant-layout-sider-dark,
   .ant-layout-sider-has-trigger {
     width: 400px !important;
     min-width: auto !important;
   }
-
   .ant-layout .ant-layout-sider-zero-width-trigger {
     top: 10px;
     background-color: #07193a;
   }
-
   .ant-layout .ant-layout-sider-zero-width-trigger:hover::after {
     background-color: transparent;
   }
@@ -114,9 +111,4 @@
   span.ant-layout-sider-zero-width-trigger.ant-layout-sider-zero-width-trigger-left {
     display: none;
   }
-}
-
-body {
-  overflow-x: hidden !important;
-
 }
