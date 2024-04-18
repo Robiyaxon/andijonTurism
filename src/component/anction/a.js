@@ -1,15 +1,4 @@
-import React from "react";
-import main_park from "../../acsserts/bog1.jpg";
-import park1 from "../../acsserts/bog`3.webp";
-import park_2 from "../../acsserts/bog3.jpg";
-import park3 from "../../acsserts/bog1.jpg";
-import { MyMap } from "./map/Map";
-import AnctionHeader from "./AnctionHeader";
-import style from "./NewsSingle.module.css";
-import { ReactPhotoSphereViewer } from 'react-photo-sphere-viewer';
-
-const NewsSingle = () => {
-  const mapData = [
+const mapData = [
     {
       title: "Bog`ishamol",
       text: `
@@ -51,18 +40,6 @@ Bog'ishamol tabiati boyicha istirohat bog'i, shahar fuqarolariga va turistlarga 
           <img src={data.img3} alt="" />
         </div>
       </div>
-      <h1 className={style.tridi}>Joyning 3D maketi</h1>
-      <ReactPhotoSphereViewer className={style.tridii} src="https://scontent.fura3-1.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lbQinOsag9MAb6HAA2_&_nc_ht=scontent.fura3-1.fna&oh=00_AfDqJLGpGHSpkDYtL0_SzR7KUSkMpwmEjw5UzgwvaWQ_Dg&oe=6626AC4F" height={'80vh'} width={"100%"}></ReactPhotoSphereViewer>
       <MyMap title={data.title} map1={data.map1} map2={data.map2} />
     </div>
   ));
-
-  return (
-    <div className={style.action}>
-      {mapComponents}
-    
-    </div>
-  );
-};
-
-export default NewsSingle;

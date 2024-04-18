@@ -23,6 +23,7 @@ import main_park from "../../acsserts/park_main.jpg";
 import park1 from "../../acsserts/park1.webp";
 import park_2 from "../../acsserts/park2.jpg";
 import park3 from "../../acsserts/park3.jpg";
+import park4 from "../../acsserts/bog1.jpg";
 
 import main_zoo from "../../acsserts/main_zoo.webp";
 import zoo1 from "../../acsserts/zoo1.jpg";
@@ -40,6 +41,14 @@ const MyRoute = () => {
       img: park,
       title: "'Alisher Navoi' bog'i",
       text2: "Eski shahar",
+      text3: "lorem imsone 4556",
+      path: "singlepark",
+    },
+    {
+      id: 1,
+      img: park4,
+      title: "Bog`ishamol",
+      text2: "Andijon tumani",
       text3: "lorem imsone 4556",
       path: "singlepark",
     },
@@ -157,46 +166,14 @@ const MyRoute = () => {
         <Route
           path="/park/singlepark"
           element={
-            <NewsSingle
-              title={"'Alisher Navoiy' nomidagi istirohat bog'i"}
-              text={
-                "Andijonliklarga hos shijoat, mardlik timsoli sifatida 1933 yili shahar ustalar tomonidan mehnatkashlarga sovg’a tariqasida bunyod etilgan. Andijon yoshlari va mehmonlarning sevimli dam olish maskani – Alisher Navoiy nomidagi madaniyat va istiroxat bog’i ichida joylashgan. 2000 yilda qayta ta’mirlashgan. Unga uyg’unlashtirilib “Amfiteatr” da bayram tantanalari va boshqa ko’ngilochar tadbirlar o’tkaziladi."
-              }
-              text_2={
-                "Andijonliklarga hos shijoat, mardlik timsoli sifatida 1933 yili shahar ustalar tomonidan mehnatkashlarga sovg’a tariqasida bunyod etilgan. Andijon yoshlari va mehmonlarning sevimli dam olish maskani – Alisher Navoiy nomidagi madaniyat va istiroxat bog’i ichida joylashgan. 2000 yilda qayta ta’mirlashgan. Unga uyg’unlashtirilib “Amfiteatr” da bayram tantanalari va boshqa ko’ngilochar tadbirlar o’tkaziladi."
-              }
-              img1={park1}
-              img2={park_2}
-              img3={park3}
-              map1={40.78386437}
-              map2={72.35164365}
-              main_pic={main_park}
-              route={"Bog'lar"}
-              route_path={"park"}
-            />
+            <NewsSingle />
           }
         ></Route>
 
         <Route
           path="/park/singlepark"
           element={
-            <NewsSingle
-              title={"'Alisher Navoiy' nomidagi istirohat bog'i"}
-              text={
-                "Andijon shahrining eski qismida joylashgan Jome me’moriy majmuasi 1885-1892-yillarda hukmdor va xoqon Muhammadaliboy tomonidan qurilgan. Eski majmuada Farg‘ona vodiysining islom shaharsozlik an‘analariga binoan madrasalar, minoralar va xonaqolar mavjud. Loyiha muallifi o‘sha davrning taniqli me’mori Isaxon Muhammad Muso o‘g‘li bo‘lgan."
-              }
-              text_2={
-                "Majmuaning umumiy maydoni 2 gektardan oshadi. 2 gektarlik kompleks to‘rtburchak shaklida, to‘rt burchagida gumbazlari bilan birga qurilgan. G‘arbiy tomonida 50 xonadan iborat xonaqo, minora joylashgan."
-              }
-              img1={park}
-              img2={park2}
-              img3={park}
-              map1={40.78791552216897}
-              map2={72.3459619671118}
-              main_pic={main_jome}
-              route={"Istirohat bo'gi"}
-              route_path={"park"}
-            />
+            <NewsSingle />
           }
         ></Route>
 
