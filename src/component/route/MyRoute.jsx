@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import zoopark from "../../acsserts/zoopark.jpg";
 import park from "../../acsserts/navoiy.jpg";
-import park2 from "../../acsserts/park.jpg";
+// import park2 from "../../acsserts/park.jpg";
 
 import img2 from "../../acsserts/jome2.jpg";
 import img3 from "../../acsserts/jome3.jpg";
@@ -19,10 +19,10 @@ import qutayba1 from "../../acsserts/qutayba1.jpg";
 import qutayba2 from "../../acsserts/qutayba2.jpg";
 import qutayba3 from "../../acsserts/qutayba3.jpg";
 
-import main_park from "../../acsserts/park_main.jpg";
-import park1 from "../../acsserts/park1.webp";
-import park_2 from "../../acsserts/park2.jpg";
-import park3 from "../../acsserts/park3.jpg";
+// import main_park from "../../acsserts/park_main.jpg";
+// import park1 from "../../acsserts/park1.webp";
+// import park_2 from "../../acsserts/park2.jpg";
+// import park3 from "../../acsserts/park3.jpg";
 import park4 from "../../acsserts/bog1.jpg";
 
 import main_zoo from "../../acsserts/main_zoo.webp";
