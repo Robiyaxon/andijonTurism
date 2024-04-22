@@ -1,10 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import img from "../../acsserts/jome.jpg";
-import img2 from "../../acsserts/mingqala.jpg";
-import img3 from "../../acsserts/muslim.jpg";
-
 import "./Anction.css";
 
 const Anctions = ({

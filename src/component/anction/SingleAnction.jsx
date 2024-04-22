@@ -1,14 +1,10 @@
 import React from "react";
-import main_park from "../../acsserts/bog1.jpg";
-import park1 from "../../acsserts/bog`3.webp";
-import park_2 from "../../acsserts/bog3.jpg";
-import park3 from "../../acsserts/bog1.jpg";
 import { MyMap } from "./map/Map";
 import AnctionHeader from "./AnctionHeader";
 import style from "./NewsSingle.module.css";
 import { ReactPhotoSphereViewer } from 'react-photo-sphere-viewer';
 
-const NewsSingle = ({ title, text, text_2, img1, img2, img3, map1, map2, main_pic, route, route_path, url_image }) => {
+const NewsSingle = ({ title, text,  img1, img2, img3, map1, map2, main_pic, route, route_path, url_image }) => {
   return (
     <div className={style.action}>
       <div >
