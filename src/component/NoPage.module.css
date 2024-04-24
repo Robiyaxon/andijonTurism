@@ -1,0 +1,15 @@
+.NoPage {
+    margin-top: 1rem;
+    padding: 10rem 1rem 1rem 320px;
+}
+
+.NoPage h1 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.NoPage h2 {
+    font-family: cursive;
+    padding: 0;
+    text-align: center;
+}

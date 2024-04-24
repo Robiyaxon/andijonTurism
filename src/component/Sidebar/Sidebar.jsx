@@ -64,7 +64,7 @@ const Saidbar = () => {
       ),
     ]),
     getItem(
-      <NavLink to="/home/notpage">{t("Mehmonxonalar")}</NavLink>,
+      <NavLink to="/home/hotel">{t("Mehmonxonalar")}</NavLink>,
       "6",
       <BankOutlined />
     ),

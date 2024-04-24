@@ -42,10 +42,15 @@ import karoake from "../../acsserts/karoake.jpg";
 import teatri1 from "../../acsserts/teatri1.jpg";
 import teatri2 from "../../acsserts/teatri2.jpg";
 import teatri3 from "../../acsserts/teatri3.jpg";
+//hotel
+import hotel1 from "../../acsserts/hotel1.jpg";
+import hotel2 from "../../acsserts/hotel2.jpg";
+import hotel3 from "../../acsserts/hotel3.jpg";
 
 import Header from "../Header/Header";
 import Anction from "../anction/Anction";
 import NewsSingle from "../anction/SingleAnction";
+import NoPage from "../NoPage";
 
 const MyRoute = () => {
   const map1 = [
@@ -134,6 +139,16 @@ const MyRoute = () => {
       text2: "",
       text3: "lorem imsone 4556",
       path: "singletheatre",
+    },
+  ];
+  const map9= [
+    {
+      id: 1,
+      img: hotel2,
+      title: "Bog`ishamol mehmonxonasi",
+      text2: "",
+      text3: "lorem imsone 4556",
+      path: "singlehotel",
     },
   ];
   return (
@@ -331,6 +346,31 @@ const MyRoute = () => {
             />
           }
         ></Route>
+        <Route path="/hotel" element={<Anction title={"Mehmonxona"} map={map9} />}></Route>
+        <Route
+          path="/hotel/singlehotel"
+          element={
+            <NewsSingle  
+            title= "Bog`ishamol mehmonxonasi"
+            text= 'Bu ajoyib 5 yulduzli mehmonxona Andijon shahrining markaziy qismida joylashgan. "Bog‘ishamol Hotel" – zamonaviy mehmonxonaning sharqona mehmondo‘stligi bilan uyg‘unlashuvi. Mehmonxona xolli barcha kerakli uskunalar va katta chiroyli admin-bar bilan jihozlangan. Hovlida yoritiladigan musiqiy favvora bor. Mehmonxonada och ranglardagi 40 ta qulay xona mavjud: 12 ta bir o‘rinli, 23 ta ikki o‘rinli va 5 ta Lyuks klassli nomerlar ham ishlash, ham dam olish uchun jihozlangan. Chekmaydiganlar uchun alohida xonalar mavjud. Mehmonxonaning Biznes-markazi va simsiz Internet sizni Andijonda bo‘lib turgan paytingizda ofisingiz va oilangiz bilan bog‘lanishga imkoniyat beradi.
+
+            Standard Single  bitta katta ikki kishilik karavotga ega bir o‘rinli nomer. Shuningdek, xonada ish stoli, mehmonlar burchagi, garderob yoki javon bor. Bir-biriga o‘tadigan nomerlar mavjud.
+            
+            Standard Twin – ikkita bir o‘rinli karavotga ega nomer. Shuningdek, ish stoli, mehmonlar burchagi, garderob yoki javon mavjud.'
+               
+            img1= {hotel2}
+            img2= {hotel3}
+            img3= {hotel1}
+            map1= {40.78386437}
+            map2= {72.35164365}
+            main_pic= {hotel3}
+            route= "Bog`ishamol mehmonxonasi"
+            route_path= "mehmonxona"
+            />
+          }
+        ></Route>
+
+    <Route path="/notpage" element={<NoPage/>}></Route>
       </Routes>
     </div>
   );
