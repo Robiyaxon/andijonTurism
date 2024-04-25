@@ -21,7 +21,6 @@ import qutayba3 from "../../acsserts/qutayba3.jpg";
 
 import main_park from "../../acsserts/park_main.jpg";
 import park1 from "../../acsserts/park1.webp";
-import park3 from "../../acsserts/park3.jpg";
 
 
 import park4 from "../../acsserts/bog1.jpg";
