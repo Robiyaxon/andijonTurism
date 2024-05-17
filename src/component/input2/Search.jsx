@@ -2,22 +2,9 @@ import React from 'react';
 import { Select } from 'antd';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import style from './Search.module.css';
-const provinceData = ['Andijon tumani ',
-  'Asaka tumani',
-  "Baliqchi tumani",
-  "Bo'ston tumani",
-  " Buloqboshi tumani",
-  " Izboskan tumani",
-  " Jalaquduq tumani",
-  " Marhamat tumani",
-  "Oltinko'l tumani",
-  " Paxtaobod tumani",
-  "Qo'rg'ontepa tumani",
-  " Shaxrixon tumani",
-  " Ulug'nor tumani",
-  "Xo'jaobod tumani",
-  "Xonobod shahri",
-  "Andijon shahri",
+const provinceData = [
+  'Hududni tanlang! ',
+  "Andijon viloyati",
   "Buxoro viloyati",
   "Fargʻona viloyati",
   "Xorazm viloyati",
