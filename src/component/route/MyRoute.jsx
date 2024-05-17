@@ -260,8 +260,9 @@ const MyRoute = () => {
             map2= {72.35164365}
             main_pic= {park4}
             route= "Bog'lar"
-            url_image="https://scontent.fura3-1.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=E8ZkxGYl1VAAb55cIHJ&_nc_ht=scontent.fura3-1.fna&oh=00_AfC72OO79dExQpA6z5Z3FjehMCy0PDwRc0nGJTTI5nPdLg&oe=662BF24F"
+            url_image="https://scontent.ftas4-3.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=sbu112KbHjsQ7kNvgFDFmj6&_nc_ht=scontent.ftas4-3.fna&oh=00_AYDx0OniuYUD6NO3ag9wcDz1dYCiNDjScIskWJM-HpWL7A&oe=664BCE8F"
             route_path= "park"
+           
             />
           }
         ></Route>
@@ -305,11 +306,12 @@ const MyRoute = () => {
             main_pic= {karaoke3}
             route= "Akzar Karaoki bar"
             route_path= "karaoki"
+            bron={true}
             />
           }
         ></Route>
 
-        <Route path="/disco" element={<Anction title={"Diskateka"} map={map7} />}></Route>
+        <Route path="/disco" element={<Anction title={"Diskateka"} map={map7}  bron={true} />}></Route>
         <Route
           path="/disco/singledisco"
           element={
@@ -324,6 +326,7 @@ const MyRoute = () => {
             main_pic= {karaoke3}
             route= "Akzar Karaoki bar"
             route_path= "karaoki"
+            bron={true}
             />
           }
         ></Route>
@@ -343,10 +346,11 @@ const MyRoute = () => {
             main_pic= {teatri1}
             route= "Andijon teatri"
             route_path= "teatri"
+            bron={true}
             />
           }
         ></Route>
-        <Route path="/hotel" element={<Anction title={"Mehmonxona"} map={map9} />}></Route>
+        <Route path="/hotel" element={<Anction title={"Mehmonxona"} map={map9}  />}></Route>
         <Route
           path="/hotel/singlehotel"
           element={
@@ -366,9 +370,10 @@ const MyRoute = () => {
             main_pic= {hotel3}
             route= "Bog`ishamol mehmonxonasi"
             route_path= "mehmonxona"
+            bron={true}
             />
-          }
-        ></Route>
+          }/>
+        
 
     <Route path="/notpage" element={<NoPage/>}></Route>
       </Routes>

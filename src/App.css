@@ -8,7 +8,14 @@
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
-
+:where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-modal"], :where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-modal"]{
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+:where(.css-dev-only-do-not-override-xu9wm8).ant-modal .ant-modal-content{
+  width: 450px !important;
+}
 .ant-layout-sider,
 .ant-layout-sider-dark {
   /* z-index: none !important; */
@@ -77,17 +84,15 @@
 :where(.css-dev-only-do-not-override-xu9wm8).ant-image .ant-image-img {
   height: 100% !important;
 }
+:where(.css-dev-only-do-not-override-xu9wm8).ant-btn-default {
+display: none !important;
+}
 :where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"]
   [class^="ant-input"],
 :where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"]
   [class^="ant-input"],
 :where(.css-dev-only-do-not-override-xu9wm8)[class^="ant-input"]
   [class*=" ant-input"],
-:where(.css-dev-only-do-not-override-xu9wm8)[class*=" ant-input"]
-  [class*=" ant-input"] {
-  height: 50px !important;
-}
-
 .ant-layout-sider-children {
   overflow: auto;
 }

@@ -18,7 +18,18 @@ const provinceData = ['Andijon tumani ',
   "Xo'jaobod tumani",
   "Xonobod shahri",
   "Andijon shahri",
-
+  "Buxoro viloyati",
+  "Fargʻona viloyati",
+  "Xorazm viloyati",
+  "Namangan viloyati",
+  "Navoiy viloyati",
+  "Qashqadaryo viloyati	",
+  "Qoraqalpogʻiston Respublikasi",
+  "Samarqand viloyati",
+  "Sirdaryo viloyati",
+  "Surxondaryo viloyati",
+  "Toshkent viloyati",
+  "Toshkent shahri"
 
 ];
 const Search2 = () => {

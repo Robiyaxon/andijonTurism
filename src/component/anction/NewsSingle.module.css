@@ -2,13 +2,14 @@
     margin:0 50px 0 300px;
     width: calc(100% - 300px);
 }
-.tridii{
-    border: 2px solid red;
-}
+
 .Header {
     padding: 2rem 5rem;
 }
-
+.inputs{
+    margin-top: 1rem !important;
+    width: 100%;
+}
 .IMG {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +24,14 @@
 .tridi{
     padding: 2rem 5rem;
 
+}
+.for_booking{
+    display: flex;
+    justify-content:flex-end;
+    padding: 0 5rem;
+}
+.ClickButton{
+ 
 }
 @media screen and (max-width:991.9px) {
     .action{
