@@ -260,7 +260,7 @@ const MyRoute = () => {
             map2= {72.35164365}
             main_pic= {park4}
             route= "Bog'lar"
-            url_image="https://scontent.ftas4-3.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QI1NZpu37uEQ7kNvgE1PEBe&_nc_ht=scontent.ftas4-3.fna&oh=00_AYC2THB-C9CyQSuyUAAutYRCFoh1rXGLfQBSBYAvQrV3IQ&oe=66522DCF"
+            url_image="https://scontent.ftas4-3.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XW7s2z1tlfAQ7kNvgHWy08Q&_nc_ht=scontent.ftas4-3.fna&oh=00_AYC24uZhm1XFoaSVWiMHYCYgriAqF_1wDapJ3he7W-DKbg&oe=66646A8F"
             route_path= "park"
            
             />
