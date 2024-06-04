@@ -19,6 +19,9 @@
     margin: 0;
   }
 }
+
+
+
 @media (min-width: 0) and (max-width: 750.9) {
   .Footer {
     padding: 10px;
