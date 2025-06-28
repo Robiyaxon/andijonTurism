@@ -1,14 +1,204 @@
-.Search{
-    background-image: url("../../acsserts/sidebar.webp");
+/* Animatsiyalar */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Koproq yuqoridan kelish efekti */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fon rasmini silliq o'zgartirish uchun animatsiya */
+@keyframes backgroundFade {
+    0%, 100% { background-image: url('../../acsserts/orqa\ fon.jpg'); } /* 1-rasm: Registon */
+    33% { background-image: url('../../acsserts/orqafon2.jpg'); } /* 2-rasm: Buxoro eski shahar */
+    66% { background-image: url('../../acsserts/orqafon3.jpg'); } /* 3-rasm: Tog' manzarasi */
+}
+
+.SearchContainer {
+    position: relative;
     height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* width: 200px !important; */
+    overflow: hidden; /* Kontentning konteynerdan tashqariga chiqishini oldini olish */
+    background-color: #0d1117; /* Fon rasmi yuklanmaganda yoki animatsiya oralig'ida */
+    animation: backgroundFade 30s infinite alternate; /* 30 sekundda fon rasmlari almashadi */
+    background-size: cover;
+    background-position: center;
 }
-.Search_input{
-    width: 400px !important;
-    height: 40px !important;
+
+.SearchContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fon rasmi ustidagi qorong'ulik */
+    z-index: 1; /* Kontentdan orqaroqda */
+}
+
+.ContentWrapper {
+    position: relative; /* Z-index ishlashi uchun */
+    z-index: 2; /* Fon rasmidan ustun bo'lishi kerak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 60px; /* Kattaroq padding */
+    background-color: rgba(25, 25, 25, 0.7); /* Yarim shaffof qorong'u fon */
+    border-radius: 15px; /* Kattaroq radius */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Chuqurroq soya */
+    max-width: 80%; /* Kengroq bo'lishi mumkin */
+    animation: slideUpFadeIn 1.2s ease-out forwards; /* Kontent animatsiyasi */
+    animation-delay: 0.8s; /* Fon animatsiyasidan keyin boshlansin */
+    opacity: 0; /* Animatsiya boshlanishida yashirin */
+    backdrop-filter: blur(8px); /* Orqa fonni xiralashtirish */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Yengil chegara */
+}
+
+.Title {
+    color: #fff;
+    font-family: 'Playfair Display', serif; /* Turizmga mosroq shrift (agar o'rnatilgan bo'lsa) */
+    font-size: 3.5em; /* Juda katta sarlavha */
+    margin-bottom: 50px; /* Ko'proq joy */
+    font-weight: 800; /* Qalinroq shrift */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Aniqroq soya */
+    line-height: 1.1;
+    letter-spacing: 1px; /* Harflar orasidagi masofa */
+    animation: fadeIn 1.5s ease-out forwards; /* Sarlavha animatsiyasi */
+    animation-delay: 1.5s; /* Kontentdan keyin boshlansin */
+    opacity: 0; /* Animatsiya boshlanishida yashirin */
+}
+
+/* Ant Design Select stillarini o'zgartirish */
+.RegionSelect.ant-select-single .ant-select-selector {
+    background-color: rgba(255, 255, 255, 0.98) !important; /* Deyarli to'liq oq */
+    border: none !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Kattaroq soya */
+    height: 60px !important; /* Kattaroq balandlik */
+    display: flex;
+    align-items: center;
+    padding-left: 25px !important; /* Kattaroq chap padding */
+    font-size: 1.3em !important; /* Kattaroq shrift */
+    border-radius: 10px !important; /* Kattaroq radius */
+    font-weight: 600; /* Qalinroq shrift */
+    color: #333 !important; /* To'q rang */
+    transition: all 0.3s ease-in-out;
+    min-width: 400px; /* Ant Design'ning standartini bekor qilish */
+}
+
+/* Hover effekti */
+.RegionSelect.ant-select-single .ant-select-selector:hover {
+    transform: translateY(-3px); /* Ko'proq ko'tarilish */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Yanada kuchliroq soya */
+}
+
+.RegionSelect.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    color: #888 !important; /* Yengilroq placeholder rangi */
+}
+
+.RegionSelect.ant-select-single .ant-select-selector .ant-select-selection-item {
+    color: #333 !important;
+}
+
+.RegionSelect.ant-select-arrow {
+    color: #555 !important;
+    font-size: 1.3em !important; /* Kattaroq strelka */
+    right: 20px !important; /* O'ngga biroz surish */
+}
+
+/* Fokusdagi stil */
+.RegionSelect.ant-select-focused .ant-select-selector,
+.RegionSelect.ant-select-open .ant-select-selector {
+    border-color: #4CAF50 !important; /* Yashil chegaraga o'zgartirish */
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.3) !important; /* Yashil soya */
+    transform: translateY(0); /* Transformatsiyani tiklash */
+}
+
+/* Dropdown menu stillari */
+.ant-select-dropdown {
+    background-color: #fff !important;
+    border-radius: 10px !important; /* Kattaroq radius */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important; /* Kattaroq soya */
+    padding: 10px 0 !important;
+    animation: slideUpFadeIn 0.4s ease-out; /* Options uchun animatsiya */
+}
+
+.ant-select-item-option {
+    padding: 15px 25px !important; /* Kattaroq padding */
+    font-size: 1.2em !important; /* Kattaroq shrift */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: #e8f5e9 !important; /* Yengilroq yashil */
+    font-weight: 700 !important; /* Qalinroq shrift */
+    color: #388e3c !important; /* To'qroq yashil */
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background-color: #f1f8e9 !important; /* Yana ham yengilroq yashil */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+    .Title {
+        font-size: 2.8em;
+        margin-bottom: 40px;
+    }
+    .ContentWrapper {
+        padding: 30px 50px;
+    }
+    .RegionSelect.ant-select-single .ant-select-selector {
+        min-width: 300px;
+        height: 55px !important;
+        font-size: 1.2em !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .Title {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+    }
+    .ContentWrapper {
+        padding: 25px 35px;
+        max-width: 90%;
+    }
+    .RegionSelect.ant-select-single .ant-select-selector {
+        min-width: unset; /* Mobil qurilmalarda avtomatik kenglik */
+        width: 100%; /* To'liq kenglik */
+        height: 50px !important;
+        font-size: 1.1em !important;
+        padding-left: 18px !important;
+    }
+    .RegionSelect.ant-select-arrow {
+        right: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .Title {
+        font-size: 1.8em;
+        margin-bottom: 25px;
+    }
+    .ContentWrapper {
+        padding: 20px 25px;
+    }
+    .RegionSelect.ant-select-single .ant-select-selector {
+        height: 45px !important;
+        font-size: 1em !important;
+        padding-left: 15px !important;
+    }
 }

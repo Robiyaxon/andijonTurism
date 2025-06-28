@@ -1,15 +1,17 @@
-.action{
-    margin:0 50px 0 300px;
+.action {
+    margin: 0 50px 0 300px;
     width: calc(100% - 300px);
 }
 
 .Header {
     padding: 2rem 5rem;
 }
-.inputs{
+
+.inputs {
     margin-top: 1rem !important;
     width: 100%;
 }
+
 .IMG {
     display: flex;
     flex-wrap: wrap;
@@ -21,26 +23,103 @@
     height: 300px;
     object-fit: cover;
 }
-.tridi{
-    padding: 2rem 5rem;
 
+.tridi {
+    padding: 2rem 5rem;
 }
-.for_booking{
+
+.for_booking {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     padding: 0 5rem;
 }
-.ClickButton{
- 
+.facilities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem 2rem;
+  margin-top: 2.5rem;
+  background: linear-gradient(to right, #eaf6ff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.08);
 }
-@media screen and (max-width:991.9px) {
-    .action{
+
+.facilityButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  background: white;
+  color: #0077b6;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #0077b6;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.facilityButton i {
+  background: #0077b6;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.facilityButton:hover {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.4);
+  border-color: transparent;
+}
+
+.facilityButton:hover i {
+  background: white;
+  color: #0072ff;
+}
+.facilityTitle {
+  text-align: center;
+  font-size: 24px;
+  color: #0077b6;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Mobile responsive */
+@media (max-width: 700px) {
+  .facilities {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 1.5rem;
+  }
+
+  .facilityButton {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Responsive dizayn */
+@media screen and (max-width: 991.9px) {
+    .action {
         width: 100%;
         margin: 0;
     }
 }
 
-@media(min-width:0) and (max-width:700.9px) {
+@media (min-width: 0) and (max-width: 700.9px) {
     .Header {
         padding: 2rem 5px;
     }
@@ -62,8 +141,18 @@
         height: 200px;
         margin-top: 1rem;
     }
+
+    .facilities {
+        padding: 1rem;
+    }
+
+    .facilityButton {
+        width: 100%;
+        text-align: center;
+    }
 }
-@media(min-width:701px) and (max-width:1000.9px) {
+
+@media (min-width: 701px) and (max-width: 1000.9px) {
     .Header {
         padding: 2rem 5px;
     }

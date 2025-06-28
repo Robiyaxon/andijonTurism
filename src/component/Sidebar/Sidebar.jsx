@@ -69,24 +69,23 @@ const Saidbar = () => {
       <BankOutlined />
     ),
     getItem(t("food"), "sub3", <TeamOutlined />, [
-      getItem(<NavLink to="/home/notpage">Restoran</NavLink>, "7"),
-      getItem(<NavLink to="/home/notpage">Kafe</NavLink>, "8"),
-      getItem(<NavLink to="/home/notpage">{t("food")}</NavLink>, "9"),
-      getItem(<NavLink to="/home/notpage">Choyxona</NavLink>, "10"),
-      getItem(<NavLink to="/home/notpage">Fast food</NavLink>, "11"),
+      getItem(<NavLink to="/home/restaurant">Restoran</NavLink>, "7"),
+      getItem(<NavLink to="/home/cafe">Kafe</NavLink>, "8"),
+      getItem(<NavLink to="/home/choyxona">Choyxona</NavLink>, "10"),
+      getItem(<NavLink to="/home/fastfood">Fast food</NavLink>, "11"),
     ]),
     getItem(t("shop"), "sub4", <GiftOutlined />, [
-      getItem(<NavLink to="/home/notpage">Kiyim kechak do`kon</NavLink>, "12"),
-      getItem(<NavLink to="/home/notpage">Suviner do`kon</NavLink>, "13"),
-      getItem(<NavLink to="/home/notpage">Gul do`kon</NavLink>, "14"),
-      getItem(<NavLink to="/home/notpage">Texnika do`kon</NavLink>, "15"),
-      getItem(<NavLink to="/home/notpage">Mobile do`kon</NavLink>, "16"),
+      getItem(<NavLink to="/home/clothing-store">Kiyim kechak do`kon</NavLink>, "12"),
+      getItem(<NavLink to="/home/souvenir-store">Suviner do`kon</NavLink>, "13"),
+      getItem(<NavLink to="/home/flower-store">Gul do`kon</NavLink>, "14"),
+      getItem(<NavLink to="/home/electronics-store">Texnika do`kon</NavLink>, "15"),
+      getItem(<NavLink to="/home/mobile-store">Mobile do`kon</NavLink>, "16"),
     ]),
     getItem(t("Talim"), "sub5", <BookOutlined />, [
-      getItem(<NavLink to="/home/notpage">Oliy talim</NavLink>, "17"),
-      getItem(<NavLink to="/home/notpage">Kutubxona</NavLink>, "18"),
-      getItem(<NavLink to="/home/notpage">o`quv markazlari</NavLink>, "19"),
-      getItem(<NavLink to="/home/notpage">Book kafe</NavLink>, "20"),
+      getItem(<NavLink to="/home/higher-education">Oliy ta'lim</NavLink>, "17"),
+      getItem(<NavLink to="/home/library">Kutubxona</NavLink>, "18"),
+      getItem(<NavLink to="/home/learning-centers">O`quv markazlari</NavLink>, "19"),
+      getItem(<NavLink to="/home/book-cafe">Book kafe</NavLink>, "20"),
     ]),
     getItem(t("Транспорт"), "sub6", <CarOutlined />, [
       // <a href="http://" target="_blank" rel="noopener noreferrer"></a>
@@ -124,7 +123,7 @@ const Saidbar = () => {
         <NavLink
           target="_blank"
           rel="noopener noreferrer"
-          to="https://www.google.com/localservices/prolist?g2lbs=ANTchaP16cWzOxMleEto5N2bhLje_8iwKXZnY2eQJMzJSrvpi9LFQpU6Mda8ipEBdhTWzoQ_WQ0JVlfrWrcP4pWOToLMZNFZHQPoYS9ps_6JTc9YQ4xp9Q4%3D&hl=en-UZ&gl=uz&ssta=1&q=andijon%20taxi&oq=andijon%20taxi&slp=MgA6HENoTUkwUFBnODZpYWdnTVYycEdEQngzRmt3Vm1SAggCYACSAc8BCg0vZy8xMWoyNG01cmY0Cg0vZy8xMWZrczJiN3o1Cg0vZy8xMWNyeHl2bjExCg0vZy8xMXNkZHZyZzQwCg0vZy8xMWRmMDRwcnY0Cg0vZy8xMW1faF82MjI0Cg0vZy8xMXkxaHYxNV9tCg0vZy8xMXAwemJnZ2p2Cg0vZy8xMXYzanRxNncxCg0vZy8xMXY0cmZkaDloCg0vZy8xMWwybG1rdjM4Cg0vZy8xMXNiOG5zM3QyCg0vZy8xMWptdF9zY2sxEgQSAggBEgQKAggBmgEGCgIXGRAA&src=2&serdesk=1&sa=X&ved=2ahUKEwiB4drzqJqCAxXDR_EDHZdQAdsQjGp6BAgUEAE&scp=ChFnY2lkOnRheGlfc2VydmljZRJJEhIJ79QTax2QvDgRrN9zeaq8RfwaEgk39neaH-y8OBEPuzPwls19diIHQW5kaWphbioUDe99PxgV7YcLKx3oYV0YJV-sKiswABoEdGF4aSIMYW5kaWpvbiB0YXhpKgxUYXhpIHNlcnZpY2U%3D"
+          to="https://www.google.com/localservices/prolist?g2lbs=ANTchaP16cWzOxMleEto5N2bhLje_8iwKXZnY2eQJMzJSrvpi9LFQpU6Mda8ipEBdhTWzoQ_WQ0JVlfrWrcP4pWOToLMZNFZHQPoYS9ps_6JTc9YQ4xp9Q4%3D&hl=en-UZ&gl=uz&ssta=1&q=andijon%20taxi&oq=andijon%20taxi&slp=MgA6HENoTUkwUFBnODZpYWdnTVYycEdEQngzRmt3Vm1SAggCYACSAc8BCg0vZy8xMWoyNG01cmY0Cg0vZy8xMWZrczJiN3o1Cg0vZy8xMWNyeHl2bjExCg0vZy8xMWNkZHZyZzQwCg0vZy8xMWRmMDRwcnY0Cg0vZy8xMW1faF82MjI0Cg0vZy8xMXkxaHYxNV9tCg0vZy8xMXAwemJnZ2p2Cg0vZy8xMXYzanRxNncxCg0vZy8xMXY0cmZkaDloCg0vZy8xMWwybG1rdjM4Cg0vZy8xMXNiOG5zM3QyCg0vZy8xMWptdF9zY2sxEgQSAggBEgQKAggBmgEGCgIXGRAA&src=2&serdesk=1&sa=X&ved=2ahUKEwiB4drzqJqCAxXDR_EDHZdQAdsQjGp6BAgUEAE&scp=ChFnY2lkOnRheGlfc2VydmljZRJJEhIJ79QTax2QvDgRrN9zeaq8RfwaEgk39neaH-y8OBEPuzPwls19diIHQW5kaWphbioUDe99PxgV7YcLKx3oYV0YJV-sKiswABoEdGF4aSIMYW5kaWpvbiB0YXhpKgxUYXhpIHNlcnZpY2U%3D"
         >
           Taxi
         </NavLink>,
@@ -142,8 +141,8 @@ const Saidbar = () => {
       ),
     ]),
     getItem(t("Medicine"), "sub7", <PlusSquareOutlined />, [
-      getItem(<NavLink to="/home/notpage">Shifohona</NavLink>, "23"),
-      getItem(<NavLink to="/home/notpage">Dorixona</NavLink>, "24"),
+      getItem(<NavLink to="/home/hospitals">Shifoxona</NavLink>, "23"),
+      getItem(<NavLink to="/home/pharmacies">Dorixona</NavLink>, "24"),
     ]),
   ];
 
