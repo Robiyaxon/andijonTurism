@@ -673,7 +673,7 @@ const map23 = [
             map2= {72.35164365}
             main_pic= {park4}
             route= "Bog'lar"
-            url_image="https://scontent.ftas4-3.fna.fbcdn.net/v/t39.30808-6/435786602_122171733230027112_1140284694879207340_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XW7s2z1tlfAQ7kNvgHWy08Q&_nc_ht=scontent.ftas4-3.fna&oh=00_AYC24uZhm1XFoaSVWiMHYCYgriAqF_1wDapJ3he7W-DKbg&oe=66646A8F"
+            url_image="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/514344305_122246354720027112_8904594653855760382_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Fu5YJk_z-U0Q7kNvwGy-hWk&_nc_oc=AdkkJDv4Ft2-MmKcH6CZvSlHNy6qDJAmXQo1JhJkXREEp7Fsa2nS2HswVJVcXPmXGF4&_nc_zt=23&_nc_ht=scontent.ftas2-1.fna&_nc_gid=NNmgNvz0-7pDI-_6GHtwCA&oh=00_AfME5FLlLg0E1R-8gwpR1_i-060q34F-ZEXKZlXQzXEQGQ&oe=686715FE"
             route_path= "park"
            
             />

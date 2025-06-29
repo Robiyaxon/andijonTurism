@@ -10,7 +10,7 @@ export const MyMap = () => {
     <div className={style.Map}>
       <YMaps>
         <Map width={"100%"} height={100+"%"} defaultState={defaultState}>
-          <Placemark geometry={[40.81955403266653, 72.29506064141155]} />
+          <ymark geometry={[40.81955403266653, 72.29506064141155]} />
         </Map>
       </YMaps>
     </div>
