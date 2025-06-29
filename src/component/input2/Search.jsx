@@ -2,6 +2,7 @@ import React from 'react';
 import { Select } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import style from './Search.module.css'; // Correct import for CSS Modules
+import logo from '../../acsserts/logo78.svg'; // Adjust path to your logo
 
 const provinceData = [
   'Hududni tanlang!', // Default placeholder
@@ -40,6 +41,9 @@ const Search2 = () => {
   return (
     <div className={style.SearchContainer}> {/* Apply module class */}
       <div className={style.ContentWrapper}> {/* Apply module class */}
+        {/* Add the logo here */}
+        <img src={logo} alt="Uzbekistan Logo" className={style.Logo} />
+
         <h1 className={style.Title}>Discover Uzbekistan: Your Adventure Awaits</h1> {/* Apply module class */}
         <Select
           className={style.RegionSelect} // Apply module class

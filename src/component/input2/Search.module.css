@@ -17,7 +17,7 @@
 
 /* Fon rasmini silliq o'zgartirish uchun animatsiya */
 @keyframes backgroundFade {
-    0%, 100% { background-image: url('../../acsserts/orqa\ fon.jpg'); } /* 1-rasm: Registon */
+    0%, 100% { background-image: url('../../acsserts/orqa fon.jpg'); } /* 1-rasm: Registon */
     33% { background-image: url('../../acsserts/orqafon2.jpg'); } /* 2-rasm: Buxoro eski shahar */
     66% { background-image: url('../../acsserts/orqafon3.jpg'); } /* 3-rasm: Tog' manzarasi */
 }
@@ -66,6 +66,24 @@
     backdrop-filter: blur(8px); /* Orqa fonni xiralashtirish */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Yengil chegara */
 }
+
+/* Logo uchun stil */
+.Logo {
+    width: 120px; /* Logo kattaligi, o'zingizga moslang */
+    height: auto; /* Nisbatni saqlash */
+    margin-bottom: 30px; /* Logo va sarlavha orasidagi masofa */
+    animation: fadeIn 1s ease-out forwards; /* Logo animatsiyasi */
+    animation-delay: 1s; /* Kontent animatsiyasidan keyin boshlansin */
+    opacity: 0; /* Animatsiya boshlanishida yashirin */
+    border-radius: 15%; /* Logo burchaklarini yumaloq qilish (agar kvadrat bo'lsa) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Logo uchun soya */
+    transition: transform 0.3s ease-in-out; /* Hover effekti uchun silliq o'tish */
+}
+
+.Logo:hover {
+    transform: scale(1.05); /* Hoverda biroz kattalashish */
+}
+
 
 .Title {
     color: #fff;
@@ -153,6 +171,10 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 992px) {
+    .Logo {
+        width: 100px; /* Kichikroq ekranlar uchun logo kattaligi */
+        margin-bottom: 25px;
+    }
     .Title {
         font-size: 2.8em;
         margin-bottom: 40px;
@@ -168,6 +190,10 @@
 }
 
 @media (max-width: 768px) {
+    .Logo {
+        width: 90px;
+        margin-bottom: 20px;
+    }
     .Title {
         font-size: 2.2em;
         margin-bottom: 30px;
@@ -189,6 +215,10 @@
 }
 
 @media (max-width: 480px) {
+    .Logo {
+        width: 80px;
+        margin-bottom: 15px;
+    }
     .Title {
         font-size: 1.8em;
         margin-bottom: 25px;
