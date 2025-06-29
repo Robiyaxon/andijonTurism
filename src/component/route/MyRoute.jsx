@@ -3,6 +3,10 @@ import { Routes, Route } from "react-router-dom";
 
 import zoopark from "../../acsserts/zoopark.jpg";
 import park from "../../acsserts/navoiy.jpg";
+import park2 from "../../acsserts/park89.jpg";
+import park3 from "../../acsserts/park90.jpg";
+import park60 from "../../acsserts/park09.jpg";
+import park59 from "../../acsserts/park08.jpg";
 // import park2 from "../../acsserts/park.jpg";
 
 import img2 from "../../acsserts/jome2.jpg";
@@ -93,6 +97,8 @@ import hospital1 from "../../acsserts/hospital1.jpg";
 import hospital2 from "../../acsserts/hospital2.jpg";
 import pharmacy1 from "../../acsserts/pharmacy1.webp";
 import pharmacy2 from "../../acsserts/pharmacy2.webp";
+import isoh  from "../../acsserts/isox.jpg";
+import axsikent  from "../../acsserts/axsikent.jpg";
 
 
 
@@ -100,28 +106,60 @@ import Header from "../Header/Header";
 import Anction from "../anction/Anction";
 import NewsSingle from "../anction/SingleAnction";
 import NoPage from "../NoPage";
+import jome56 from "../../acsserts/jome45.jpg";
 
 const MyRoute = () => {
-  const map1 = [
-    {
-      id: 1,
-      img: park,
-      title: "'Alisher Navoi' bog'i",
-      text2: "Eski shahar",
-      text3: "lorem imsone 4556",
-      path: "singlepark",
-      single: {
-       
-      }},
-    {
-      id: 2,
-      img: park4,
-      title: "Bog`ishamol",
-      text2: "Eski shahar",
-      text3: "lorem imsone 4556",
-      path: "singlepark2"
-    }
-  ];
+const map1 = [
+  {
+    id: 1,
+    img: park,
+    title: "'Alisher Navoi' bog'i",
+    text2: "Eski shahar",
+    text3: "Andijon shahar, Navoiy shoh ko'chasi 1",
+    path: "singlepark",
+    single: {},
+  },
+  {
+    id: 2,
+    img: park4,
+    title: "Bog`ishamol bog'i",
+    text2: "Bog'ishamol",
+    text3: "Andijon shahar, Bog'ishamol mavzesi",
+    path: "singlepark2",
+  },
+  {
+    id: 3,
+    img: park2, // Rasmingizni yo'lini qo'ying
+    title: "Yoshlar bog'i",
+    text2: "Markaz",
+    text3: "Andijon shahar, Yoshlar ko'chasi",
+    path: "single-youth-park",
+  },
+  {
+    id: 4,
+    img: park3, // Rasmingizni yo'lini qo'ying
+    title: "Mustaqillik bog'i",
+    text2: "Markaz",
+    text3: "Andijon shahar, Mustaqillik shoh ko'chasi",
+    path: "single-independence-park",
+  },
+  {
+    id: 5,
+    img: park60, // Rasmingizni yo'lini qo'ying
+    title: "Madaniyat va istirohat bog'i (eskisi)",
+    text2: "Eski shahar",
+    text3: "Andijon shahar, Furqat ko'chasi",
+    path: "single-culture-park",
+  },
+  {
+    id: 6,
+    img: park59, // Rasmingizni yo'lini qo'ying
+    title: "Shahidlar xotirasi xiyoboni",
+    text2: "Markaz",
+    text3: "Andijon shahar, A.Temur ko'chasi",
+    path: "single-martyrs-park",
+  },
+];
   const map2 = [
     {
       id: 1,
@@ -133,13 +171,53 @@ const MyRoute = () => {
     },
   ];
   const map3 = [
-    {
+   {
       id: 1,
-      img: main_jome,
+      img: jome56,
       title: "Jome masjidi",
-      text2: "Jome masjidi",
-      text3: "lorem imsone 4556",
+      text2: "Andijon shahar, Jome masjidi ko'chasi",
+      text3: "Andijon shahrining markaziy masjidi, juma namozlari o'qiladigan yirik majmua.",
       path: "singleaction",
+    },
+    {
+      id: 2,
+      img: qutayba1,
+      title: "Qutayba ibn Muslim maqbarasi",
+      text2: "Andijon viloyati, Qo'rg'ontepa tumani",
+      text3: "Movarounnahrni zabt etgan sarkarda Qutayba ibn Muslimning ziyoratgohi.",
+      path: "singleaction2",
+    },
+    {
+      id: 3,
+      img: isoh,
+      title: "Isoh Maqbarasi",
+      text2: "Andijon viloyati, Marhamat tumani",
+      text3: "Marhamat tumanidagi qadimiy va muqaddas hisoblangan ziyoratgoh.",
+      path: "singleaction",
+    },
+    {
+      id: 4,
+      img: park1,
+      title: "Zahiriddin Muhammad Bobur bog'i va yodgorlik majmuasi",
+      text2: "Andijon shahar, Bobur shoh ko'chasi",
+      text3: "Bobur Mirzo sharafiga bunyod etilgan majmua, ziyorat va dam olish maskani.",
+      path: "single-bobur-memorial", // Path nomini aniqroq qildim
+    },
+    {
+      id: 5,
+      img: axsikent,
+      title: "Axsikent harobalari",
+      text2: "Andijon viloyati, Baliqchi tumani",
+      text3: "Qadimiy Farg'ona poytaxti Axsikentdan qolgan tarixiy xarobalar, arxeologik yodgorlik.",
+      path: "single-axsi",
+    },
+    {
+      id: 6,
+      img: jome56, // Boshqa rasm topmasangiz, shu rasm qayta ishlatildi
+      title: "Imom Termiziy masjidi",
+      text2: "Andijon shahar",
+      text3: "Andijon shahridagi taniqli masjid, diniy-ma'rifiy ahamiyatga ega.",
+      path: "single-termiziy-masjid",
     },
   ];
   const map4 = [
@@ -645,7 +723,25 @@ const map23 = [
             />
           }
         ></Route>
-
+  <Route
+        path="/historical-places/single-bobur"
+        element={
+          <NewsSingle
+            title={"Zahiriddin Muhammad Bobur bog'i va yodgorlik majmuasi"}
+            text={
+              "Zahiriddin Muhammad Bobur nomidagi bog' va yodgorlik majmuasi Andijon shahrining markazida joylashgan bo'lib, buyuk hukmdor va shoir Bobur Mirzo sharafiga bunyod etilgan. Bu yerda Bobur haykali, gulzorlar va dam olish uchun qulay joylar mavjud. Bog' shaharliklar va sayyohlar orasida mashhur joy."
+            }
+            img1={park59}
+            img2={park6} // Yana rasm qo'shing agar bo'lsa
+            img3={park3} // Yana rasm qo'shing agar bo'lsa
+            map1={40.7820} // Bobur bog'i koordinatalarini aniq kiriting
+            map2={72.3480} // Bobur bog'i koordinatalarini aniq kiriting
+            main_pic={park4}
+            route={"Tarixiy obidalar"}
+            route_path={"historical-places"}
+          />
+        }
+      ></Route>
         <Route path="/disco" element={<Anction title={"Diskateka"} map={map7}  bron={true} />}></Route>
         <Route
           path="/disco/singledisco"
