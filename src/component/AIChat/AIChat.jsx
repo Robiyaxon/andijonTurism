@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { GoogleGenAI } from '@google/genai';
 
+console.log(
+  'GEMINI KEY:',
+  process.env.REACT_APP_GEMINI_API_KEY ? 'BOR' : "YO'Q"
+);
+
 const ai = new GoogleGenAI({
   apiKey: process.env.REACT_APP_GEMINI_API_KEY,
 });
@@ -38,12 +43,10 @@ const AIChat = () => {
     ]);
 
     try {
-      // STREAMING
+      // Gemini AI
       const response = await ai.models.generateContentStream({
         model: 'gemini-3.5-flash-lite',
-
         contents: currentInput,
-
         config: {
           temperature: 0.2,
           maxOutputTokens: 300,
@@ -54,22 +57,22 @@ const AIChat = () => {
 
       // Javobni kelishi bilan chiqarish
       for await (const chunk of response) {
-  const text = chunk.text || '';
-  fullText += text;
+        const text = chunk.text || '';
+        fullText += text;
 
-  const currentText = fullText;
+        const currentText = fullText;
 
-  setMessages((prev) => {
-    const updated = [...prev];
+        setMessages((prev) => {
+          const updated = [...prev];
 
-    updated[updated.length - 1] = {
-      sender: 'bot',
-      text: currentText,
-    };
+          updated[updated.length - 1] = {
+            sender: 'bot',
+            text: currentText,
+          };
 
-    return updated;
-  });
-}
+          return updated;
+        });
+      }
 
       // Agar javob bo'sh bo'lsa
       if (!fullText) {
@@ -84,7 +87,6 @@ const AIChat = () => {
           return updated;
         });
       }
-
     } catch (error) {
       console.error('GEMINI ERROR:', error);
 
@@ -98,7 +100,6 @@ const AIChat = () => {
 
         return updated;
       });
-
     } finally {
       setLoading(false);
     }
@@ -113,7 +114,6 @@ const AIChat = () => {
         zIndex: 9999,
       }}
     >
-
       {/* CHAT OYNASI */}
       {isOpen && (
         <div
@@ -130,7 +130,6 @@ const AIChat = () => {
             overflow: 'hidden',
           }}
         >
-
           {/* HEADER */}
           <div
             style={{
@@ -170,7 +169,6 @@ const AIChat = () => {
               gap: '8px',
             }}
           >
-
             {messages.map((msg, index) => (
               <div
                 key={index}
@@ -179,17 +177,14 @@ const AIChat = () => {
                     msg.sender === 'user'
                       ? 'flex-end'
                       : 'flex-start',
-
                   background:
                     msg.sender === 'user'
                       ? '#007bff'
                       : '#f1f5f9',
-
                   color:
                     msg.sender === 'user'
                       ? '#ffffff'
                       : '#333333',
-
                   padding: '8px 12px',
                   borderRadius: '12px',
                   maxWidth: '80%',
@@ -212,7 +207,6 @@ const AIChat = () => {
                 AI yozmoqda...
               </div>
             )}
-
           </div>
 
           {/* INPUT */}
@@ -224,7 +218,6 @@ const AIChat = () => {
               gap: '8px',
             }}
           >
-
             <input
               type="text"
               value={input}
@@ -263,9 +256,7 @@ const AIChat = () => {
             >
               {loading ? '...' : 'Yuborish'}
             </button>
-
           </div>
-
         </div>
       )}
 
@@ -290,9 +281,8 @@ const AIChat = () => {
       >
         💬
       </button>
-
     </div>
   );
 };
 
-export default AIChat
+export default AIChat;
