@@ -54,21 +54,22 @@ const AIChat = () => {
 
       // Javobni kelishi bilan chiqarish
       for await (const chunk of response) {
-        const text = chunk.text || '';
+  const text = chunk.text || '';
+  fullText += text;
 
-        fullText += text;
+  const currentText = fullText;
 
-        setMessages((prev) => {
-          const updated = [...prev];
+  setMessages((prev) => {
+    const updated = [...prev];
 
-          updated[updated.length - 1] = {
-            sender: 'bot',
-            text: fullText,
-          };
+    updated[updated.length - 1] = {
+      sender: 'bot',
+      text: currentText,
+    };
 
-          return updated;
-        });
-      }
+    return updated;
+  });
+}
 
       // Agar javob bo'sh bo'lsa
       if (!fullText) {
