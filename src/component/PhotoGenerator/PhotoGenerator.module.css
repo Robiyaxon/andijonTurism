@@ -1,0 +1,176 @@
+.GeneratorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #0d1117;
+    color: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.Title {
+    font-size: 3em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.Subtitle {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 700px;
+}
+
+.Controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.BackgroundSelect.ant-select-single .ant-select-selector {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: none !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    padding-left: 15px !important;
+    font-size: 1.1em !important;
+    border-radius: 8px !important;
+    font-weight: 500;
+    min-width: 250px;
+    color: #333 !important;
+}
+
+.BackgroundSelect.ant-select-single .ant-select-selector:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.GeneratedImageBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.GeneratedImageBox {
+    position: relative;
+    width: 600px; /* Generatsiya qilingan rasmning kengligi */
+    height: 400px; /* Generatsiya qilingan rasmning balandligi */
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    background-color: #1a202c; /* Yuklanmaganda */
+    display: flex; /* Markazlashtirish uchun */
+    justify-content: center;
+    align-items: center;
+}
+
+.BackgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) grayscale(0.2); /* Fonni biroz xiralashtirish va rangsizlantirish */
+    z-index: 1;
+}
+
+.UploadedImage {
+    position: relative; /* Fon ustiga joylashsin */
+    z-index: 2;
+    max-width: 40%; /* Yuklangan rasmning fon ustidagi hajmi (kerakli darajada sozlang) */
+    max-height: 80%;
+    object-fit: contain; /* Rasmni to'liq ko'rsatish */
+    border-radius: 50%; /* Dumaloq shakl */
+    border: 5px solid rgba(255, 255, 255, 0.8); /* Oq chegara */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.DownloadButton {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    font-size: 1.1em !important;
+    height: 50px !important;
+    padding: 0 30px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.DownloadButton:hover {
+    background-color: #218838 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Placeholder {
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 50px;
+}
+
+/* Ant Design Upload button */
+.ant-upload-wrapper .ant-btn {
+    height: 50px !important;
+    font-size: 1.1em !important;
+    padding: 0 25px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.ant-upload-wrapper .ant-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .Title {
+        font-size: 2.2em;
+    }
+    .Subtitle {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+    .Controls {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .BackgroundSelect.ant-select-single .ant-select-selector {
+        min-width: 80%;
+        width: 100%; /* mobil uchun */
+    }
+    .GeneratedImageBox {
+        width: 90%;
+        height: 300px;
+    }
+    .UploadedImage {
+        max-width: 50%; /* Mobil qurilmalarda rasm biroz kattaroq ko'rinsin */
+    }
+}
+
+@media (max-width: 480px) {
+    .Title {
+        font-size: 1.8em;
+    }
+    .Subtitle {
+        font-size: 0.9em;
+    }
+    .GeneratorContainer {
+        padding: 20px;
+    }
+    .GeneratedImageBox {
+        height: 250px;
+    }
+}

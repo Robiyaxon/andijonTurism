@@ -1,0 +1,112 @@
+.DetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #0d1117;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.DetailTitle {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.DetailImage {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.DetailDescription {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Yangi AI tavsiyasi uchun stillar */
+.RecommendationBox {
+  background-color: #2a3a4a; /* Yumshoq ko'k-kulrang fon */
+  border-left: 5px solid #66bb6a; /* Yashil chiziq */
+  padding: 20px 25px;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  text-align: left; /* Matn chapdan boshlansin */
+  animation: fadeIn 1s ease-out forwards; /* Animatsiya */
+  opacity: 0; /* Animatsiya boshlanishida yashirin */
+  animation-delay: 0.5s; /* Sahifa yuklanganidan keyin chiqishi */
+}
+
+.RecommendationTitle {
+  font-size: 1.5em;
+  color: #66bb6a; /* Yashil rang */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.RecommendationTitle::before {
+  content: '💡'; /* Yoki boshqa AI ikonasi */
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.RecommendationText {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.DetailSubtitle {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #81c784;
+}
+
+.DetailAttractionsList {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.DetailAttractionsList li {
+  margin-bottom: 8px;
+  background-color: #1a202c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.BackButton {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.BackButton:hover {
+  background-color: #0056b3;
+}
+
+/* Animatsiya keyframes (agar Search.module.css da bo'lmasa, bu yerga qo'shing) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

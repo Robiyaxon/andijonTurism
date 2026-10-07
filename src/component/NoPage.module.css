@@ -1,0 +1,15 @@
+.NoPage {
+    margin-top: 1rem;
+    padding: 10rem 1rem 1rem 320px;
+}
+
+.NoPage h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.NoPage h2 { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    text-align: center;
+}

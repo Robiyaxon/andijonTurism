@@ -1,0 +1,14 @@
+.Map {
+  margin: 2rem 0 5rem;
+  height: 400px;
+  padding: 0rem 5rem 0 5rem;
+}
+
+@media screen and (max-width: 991.9px) {
+  .Map {
+    padding: 0rem;
+  }
+  .Map h1 {
+    text-align: center;
+  }
+}
