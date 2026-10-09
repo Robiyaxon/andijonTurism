@@ -673,7 +673,7 @@ const map23 = [
             map2= {72.35164365}
             main_pic= {park4}
             route= "Bog'lar"
-            url_image="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/514344305_122246354720027112_8904594653855760382_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Fu5YJk_z-U0Q7kNvwGy-hWk&_nc_oc=AdkkJDv4Ft2-MmKcH6CZvSlHNy6qDJAmXQo1JhJkXREEp7Fsa2nS2HswVJVcXPmXGF4&_nc_zt=23&_nc_ht=scontent.ftas2-1.fna&_nc_gid=NNmgNvz0-7pDI-_6GHtwCA&oh=00_AfME5FLlLg0E1R-8gwpR1_i-060q34F-ZEXKZlXQzXEQGQ&oe=686715FE"
+            url_image="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/514344305_122246354720027112_8904594653855760382_n.jpg?stp=dst-jpg_tt6&cstp=mx6005x697&ctp=s6005x697&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Rw_yh7oM5VIQ7kNvwHUojRq&_nc_oc=AdoZNOt9PqF89OtfDp-3Qxkn74RkVhFoeE9mWvKszBUrDirbFf1-DXZrbrfZL0VvZbY&_nc_zt=23&_nc_ht=scontent.ftas1-2.fna&_nc_gid=YKwWLLgiwpC1726aOn2xXA&_nc_ss=7a2a8&oh=00_AQOrcxRSq5Y_kRrtK892VGE9uAOIsOXBX4IaXoAJcyEGnQ&oe=6ACE51FE"
             route_path= "park"
            
             />
